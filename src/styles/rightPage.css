@@ -1,0 +1,74 @@
+/* right page */
+.book-page.page-right{
+    position: absolute;
+    right: 0;
+    transform-style: preserve-3d;
+    transform-origin: left;
+    transition: transform 1s cubic-bezier(.645, .045, .355, 1);
+}
+.book-page.page-right.turn{
+    transform: rotateY(-180deg);
+}
+
+.book-page .page-front,
+.book-page .page-back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--pages-color);
+    padding: 1.5rem 2rem;
+}
+.book-page .page-front{
+    transform: rotateY(0deg) translateZ(1px);
+}
+.book-page .page-back{
+    transform: rotateY(180deg) translateZ(1px);
+}
+
+.title {
+    text-align: center;
+}
+.workeduc-box {
+    border-left: var(--border);
+    margin-top: 2rem;
+}
+.workeduc-box .workeduc-content {
+    position: relative;
+    padding-left: 1.6rem;
+    padding-bottom: 1.2rem;
+}
+.workeduc-box .workeduc-content::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -0.65rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    background: var(--main-color);
+}
+.workeduc-content .year {
+    color: var(--main-color);
+    font-size: 1.2rem;
+}
+.workeduc-content h3{
+    font-size: 1.4rem;
+    margin: .3rem 0;
+}
+.workeduc-content p{
+    font-size: 0.9rem;
+    text-align:left;
+}
+.workeduc-content .year i {
+    margin-right: .4rem;
+    font-size: 1.2rem;
+}
+.number-page{
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 600;
+}
