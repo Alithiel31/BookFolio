@@ -92,7 +92,7 @@
       label: "Meet me on Github !",
     },
     {
-      href: "www.linkedin.com/in/jacques-duchamplecheval",
+      href: "https://www.linkedin.com/in/jacques-duchamplecheval/",
       icon: "fa-brands fa-linkedin",
       label: "Meet me on LinkedIn !",
     },
@@ -133,7 +133,7 @@
   <div class="book">
     <div class="book-page page-left">
       <div class="profile-page">
-        <img src={profilePic} alt="Profile picture" />
+        <img src={profilePic} alt="Jacques Duchamplecheval" />
         <h1>Jacques Duchamplecheval</h1>
         <h3>Application Creator & Web Developer</h3>
         <p>Hi, I'm a web Developer. Let's build the future together</p>

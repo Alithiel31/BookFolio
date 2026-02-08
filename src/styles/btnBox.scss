@@ -1,34 +1,29 @@
 .btn {
-    // Structure & Alignement
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 9.5rem;
-    height: 3rem;
-    margin: 0 1rem;
-    
-    // Design
-    background: var(--main-color);
-    color: var(--white-color);
-    border: var(--border);
-    border-radius: .3rem;
-    
-    // Typo & Animation
-    font-size: 1rem;
-    font-weight: 500;
-    transition: .5s;
+  // Structure & Alignement
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 9.5rem;
+  height: 3rem;
+  margin: 0 1rem;
+  background: var(--main-color);
+  color: var(--white-color);
+  border: var(--border);
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: 0.5s;
 
-    // Logique spécifique quand le bouton est dans .btn-box
-    .btn-box & {
-        &:nth-child(2),
-        &:nth-child(1):hover {
-            background: transparent;
-            color: var(--main-color);
-        }
-
-        &:nth-child(2):hover {
-            background: var(--main-color);
-            color: var(--white-color);
-        }
+  .btn-box & {
+    &:nth-child(2),
+    &:nth-child(1):hover {
+      background: transparent;
+      color: var(--main-color);
     }
+
+    &:nth-child(2):hover {
+      background: var(--main-color);
+      color: var(--white-color);
+    }
+  }
 }
