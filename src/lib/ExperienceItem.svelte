@@ -18,8 +18,8 @@
 
     .workeduc-content {
       position: relative;
-      padding-left: 1.6rem;
-      padding-bottom: 1.2rem;
+      // padding-left: 1.6rem;
+      padding: 0 0 0 1rem;
 
       &::before {
         content: '';
