@@ -28,15 +28,37 @@
 </div>
 
 <style>
-  /* Petit tips CSS pour que tes boutons ressemblent à tes anciens spans */
-  .nextprev-btn {
+
+.nextprev-btn {
+    /* BaseLine */
     background: none;
     border: none;
     padding: 0;
     cursor: pointer;
-    color: inherit; /* Pour garder la couleur de ton icône */
+    font-size: 2rem;
+    color: var(--second-text-color);
+    
+  /* Positionning */
+    position: absolute;
+    bottom: .9rem;
+    right: 1.5rem;
+    width: 2rem;
+    height: 2rem;
+    
+    /* Flexbox */
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+    transition: color 0.5s;
+
+    &:hover {
+        color: var(--main-color);
+    }
+
+    &.back {
+        left: 1.5rem;
+        right: auto;
+    }
+}
+
 </style>

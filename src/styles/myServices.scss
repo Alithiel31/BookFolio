@@ -1,0 +1,52 @@
+/* my services */
+
+.services-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2rem;
+
+    .services-content {
+        flex: 1 1 10rem;
+        border: var(--border);
+        border-radius: .5rem;
+        padding: .8rem .5rem 1.1rem;
+        text-align: center;
+        transition: .3s ease;
+
+        &:hover {
+            box-shadow: var(--box-shadow);
+        }
+    }
+}
+
+.services-content {
+
+    /* // Les icônes */
+    i {
+        font-size: 2.5rem;
+        color: var(--main-color);
+    }
+
+    /* // Le titre */
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    /* // Le texte descriptif */
+    p {
+        margin: .2rem 0 .8rem;
+    }
+
+    /* // Le bouton spécifique à cette section */
+    .btn {
+        width: 8rem;
+        height: 2.5rem;
+        transition: .5s;
+
+        &:hover {
+            background-color: transparent;
+            color: var(--main-color);
+        }
+    }
+}

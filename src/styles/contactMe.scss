@@ -1,0 +1,83 @@
+
+/* Contact Me! */
+.contact-box {
+    margin-top: 2rem;
+    text-align: center;
+
+    .field {
+        width: 100%;
+        background-color: transparent;
+        border: var(--border);
+        border-radius: .3rem;
+        padding: .8rem;
+        font-size: 1rem;
+        color: var(--text-color);
+        margin-bottom: 1.5rem;
+
+        &::placeholder {
+            color: var(--text-color);
+        }
+    }
+
+    textarea {
+        resize: none;
+        height: 15rem;
+    }
+
+    .btn {
+        cursor: pointer;
+        transition: .5s;
+        
+        &:hover {
+            background-color: transparent;
+            color: var(--main-color);
+        }
+    }
+}
+
+.back-profile {
+    /* // Positionnement & Taille */
+    position: absolute;
+    bottom: 1.2rem;
+    right: 2rem;
+    width: 2rem;
+    height: 2rem;
+
+    /* // Style visuel */
+    background-color: transparent;
+    border: var(--border);
+    border-radius: .3rem;
+    color: var(--main-color);
+    font-size: 1.1rem;
+
+    /* // Alignement du contenu (icône centrale) */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+
+    /* // Le texte/infobulle à l'intérieur */
+    p {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%) scale(.5);
+        font-size: 1rem;
+        color: var(--main-color);
+        opacity: 0;
+        transition: .5s;
+        pointer-events: none; 
+    }
+
+    /* Hover settings */
+    &:hover {
+        background: var(--main-color);
+        color: var(--white-color);
+
+        p {
+            opacity: 1;
+            top: -1.8rem;
+            transform: translateX(-50%) scale(1);
+        }
+    }
+}

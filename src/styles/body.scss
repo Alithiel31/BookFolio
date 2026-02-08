@@ -27,3 +27,16 @@ body{
         transform: rotate(0deg);
     }
 }
+
+
+.title {
+    text-align: center;
+}
+
+.number-page{
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 600;
+}

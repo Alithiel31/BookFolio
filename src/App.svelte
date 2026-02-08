@@ -6,16 +6,15 @@
   import SkillCategory from "./lib/SkillCategory.svelte";
   import profilePic from './assets/profilePic.jpg';
 
-  import "./styles/body.css";
-  import "./styles/btnBox.css";
-  import "./styles/contactMe.css";
-  import "./styles/myServices.css";
-  import "./styles/nextButton.css";
-  import "./styles/portfolio.css";
-  import "./styles/profilePage.css";
-  import "./styles/rightPage.css";
-  import "./styles/skillsBox.css";
-  import "./styles/socialMedia.css";
+  import "./styles/body.scss";
+  import "./styles/btnBox.scss";
+  import "./styles/contactMe.scss";
+  import "./styles/myServices.scss";
+  import "./styles/portfolio.scss";
+  import "./styles/profilePage.scss";
+  import "./styles/rightPage.scss";
+  import "./styles/skillsBox.scss";
+  import "./styles/socialMedia.scss";
 
   let coverTurned = $state(false);
   let coverZIndex = $state(100);
@@ -172,7 +171,7 @@
 
           <ExperienceItem
             year="2019-2023"
-            title="Butter Production Line Lead / Teacher"
+            title="Butter Production Line Lead / Trainer"
             school="ENILV - La Roche sur Foron"
             description="Led an industrial production facility and managed a small team."
           />
